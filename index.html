@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalador | Sala Multisensorial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- ESP Web Tools -->
+    <script type="module" src="https://unpkg.com/esp-web-tools@9.2.1/dist/web/install-button.js?module"></script>
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Sala Multisensorial</h1>
+            <p>Plataforma oficial de distribución de Firmware</p>
+        </header>
+
+        <main>
+            <div class="card-grid">
+                <!-- Tarjeta del Maestro -->
+                <div class="device-card">
+                    <div class="card-icon">🧠</div>
+                    <h2>Módulo Maestro</h2>
+                    <p>El cerebro de la sala. Controla y coordina a todos los demás dispositivos por ESP-NOW y recibe órdenes de Alexa.</p>
+                    <div class="install-container">
+                        <esp-web-install-button manifest="maestro/manifest.json"></esp-web-install-button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Futura: Difusor -->
+                <div class="device-card disabled">
+                    <div class="card-icon">💨</div>
+                    <h2>Difusor de Aromas</h2>
+                    <p>En desarrollo. El manifiesto estará disponible en la próxima compilación.</p>
+                    <div class="install-container">
+                        <button class="btn-disabled" disabled>Próximamente</button>
+                    </div>
+                </div>
+
+                 <!-- Tarjeta Futura: Proyector -->
+                 <div class="device-card disabled">
+                    <div class="card-icon">🌌</div>
+                    <h2>Proyector de Estrellas</h2>
+                    <p>En desarrollo. El manifiesto estará disponible en la próxima compilación.</p>
+                    <div class="install-container">
+                        <button class="btn-disabled" disabled>Próximamente</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Compatible con navegadores Chrome, Edge y Opera. Requiere un ESP32 conectado por USB.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-    "name": "Sala Multisensorial - Módulo Maestro",
+    "name": "Sala Multisensorial - Luz General",
     "version": "2.0",
     "home_assistant_domain": "salamultisensorial",
     "funding_url": "https://salamultisensorial.com",
@@ -16,7 +16,7 @@
                     "offset": 32768
                 },
                 {
-                    "path": "../firmware_0.bin",
+                    "path": "../firmware_100.bin",
                     "offset": 65536
                 }
             ]
